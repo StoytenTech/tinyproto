@@ -32,10 +32,10 @@ extern "C" {
 
 #if defined(__AVR__)
 #include "include/avr_hal.h"
-#elif defined(__XTENSA__)
-#include "include/esp32_hal.h"
 #elif defined(ARDUINO)
 #include "include/arduino_hal.h"
+#elif defined(__XTENSA__)
+#include "include/esp32_hal.h"
 #elif defined(__linux__)
 #include "include/linux_hal.h"
 #elif defined(__MINGW32__)

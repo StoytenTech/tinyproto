@@ -21,10 +21,10 @@
 
 #if defined(__AVR__)
 #include "impl/avr_hal.inl"
-#elif defined(__XTENSA__)
-#include "impl/esp32_hal.inl"
 #elif defined(ARDUINO)
 #include "impl/arduino_hal.inl"
+#elif defined(__XTENSA__)
+#include "impl/esp32_hal.inl"
 #elif defined(__linux__)
 #include "impl/linux_hal.inl"
 #elif defined(__MINGW32__)
